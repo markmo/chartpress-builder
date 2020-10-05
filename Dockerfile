@@ -20,7 +20,7 @@ RUN chmod +x /builder/helm.bash && \
   apt-get --purge -y autoremove && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
-  python3.6 -m pip install chartpress
+  python3.6 -m pip install chartpress==0.6.0
 
 ENV PATH=/builder/helm/:$PATH
 
